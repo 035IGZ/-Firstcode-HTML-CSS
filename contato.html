@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/folhadeestilo.css">
+</head>
+<body>
+	<div class="container-principal" id="topo">
+		<header>
+			<div class="logo">
+				<a href="index.html">
+					<img src="imagens/logo.png" alt="logo site">
+				</a>
+			</div>
+
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="topvendas.html">Top Vendas</a></li>
+					<li><a href="recomendacoes.html">Recomendações</a></li>
+					<li><a href="quemsomos.html">Quem somos</a></li>
+					<li><a href="#topo">Formulário de contato</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<form action="enviar-email" class="formulario" method="post">
+            <p> Envie uma mensagem preenchendo o formulário abaixo</p>
+    
+            <div class="field">
+                <label for="nome">Seu Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+            </div>
+    
+            <div class="field">
+                <label for="telefone">Seu Telefone:</label>
+                <input type="text" id="telefone" name="telefone" placeholder="(XX) xxxx-xxxx*">
+            </div>
+    
+            <div class="field">
+                <label for="email">Seu E-Mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
+            </div>
+
+            <div class="field radiobox">
+                <span>Sexo: </span>
+                <input type="radio" name="novidades" id="Masculino" value="Masculino" checked><label for="Masculino">Masculino</label>
+                <input type="radio" name="novidades" id="Feminino" value="Feminino"><label for="Feminino">Feminino</label>
+            </div>
+
+            <!--Estados-->
+
+            <label for="states">Estado</label>
+                <select id="states" name="states">
+                    <option value="Selecione">Selecione o estado:</option>
+							<optgroup label="Norte">
+						<option value="ac">Acre</option>
+						<option value="ap">Amapá</option>
+						<option value="am">Amazonas</option>
+						<option value="pa">Pará</option>
+						<option value="ro">Rondônia</option>
+						<option value="rr">Roraima</option>
+						<option value="to">Tocantins</option>
+							<optgroup label="Nordeste">
+						<option value="al">Alagoas</option>
+						<option value="ba">Bahia</option>
+						<option value="ce">Ceará</option>
+						<option value="ma">Maranhão</option>
+						<option value="pb">Paraíba</option>
+						<option value="pe">Pernambuco</option>
+						<option value="pi">Piauí</option>
+						<option value="rn">Rio Grande do Norte</option>
+						<option value="se">Sergipe</option>
+							<optgroup label="Sudeste">
+						<option value="Sp">São Paulo</option>
+						<option value="rj">Rio de Janeiro</option>
+						<option value="mg">Minas Gerais</option>
+						<option value="es">Espírito Santo</option>
+							<optgroup label="Centro-Oeste">
+						<option value="df">Distrito Federal</option>
+						<option value="go">Goiás</option>
+						<option value="mt">Mato Grosso</option>
+						<option value="ms">Mato Grosso do Sul</option>
+							<optgroup label="Sul">
+						<option value="pr">Paraná</option>
+						<option value="rs">Rio Grande do Sul</option>
+						<option value="sc">Santa Catarina</option>
+                </select>
+
+                <!--CIDADES-->
+
+            <label for="cities">Cidade</label>
+                <select name="cities" id="cities">
+                    <option value="nd">Selecione:</option>
+                    <option value="sp">São Paulo</option>
+                    <option value="pe">Recife</option>
+                    <option value="bh">Salvador</option>
+                    <option value="pr">Curitiba</option>
+                    <option value="am">Manaus</option>
+                </select>
+
+            <label for="motivo-contato">Motivo do Contato:</label>
+                <select name="motivo-contato" id="motivo-contato">
+                    <option value="nd">'Selecione'</option>
+                    <option value="dv">Dúvidas</option>
+                    <option value="el">Elogio</option>
+                    <option value="ot">Outros</option>
+                    
+                </select>   
+
+            <div class="field">
+                <label for="mensagem">Sua mensagem:</label>
+                <textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea>
+            </div>
+    
+            <a href="index.html"><button type="button" name="button">Enviar</button></a>
+        </form>
+
+		<footer id="rodape">
+            <div class="footer">
+            
+            <p class="pfooter">Este trabalho apresentado à disciplina de Programação WEB responsiva como requisito parcial de conclusão da matéria.</p>
+            </div>
+            <div class="footer-baixo">
+            <p>Abimael Gomes dos Santos; Douglas Fonseca de Santana; Gabriel Luiz Rodrigues de Oliveira; Lucas Iglezias dos Anjos; Vittorio Marchesini Paim;</p>
+            </div>
+        </footer>
+
+	</div>			
+</body>
+</html>

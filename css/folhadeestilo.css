@@ -1,0 +1,247 @@
+*{margin: 0; padding: 0;} /* * - inicia todos os elementos com margin 0 e padding 0 */
+
+.container-principal{font-family: "Verdana"; color: #777;}
+
+/* definir as propriedades do topo */
+header{width: 100%; height: 100px; background-color: #fff; position: relative; top: 0;}
+
+/*  definir as propriedades do logo */
+.logo{position: absolute; width: 300px; height: auto;}
+.logo img{width: 90%; margin-left: 10%;}
+
+/* definir as propriedades do menu */
+nav {position: absolute; right: 30px; bottom: 0px;}
+nav ul li {float: left; color: #fff; width: auto; margin: 0.8em; font-size: 1.5em; font-family: 'verdana'; list-style:none; }
+nav ul li a{text-decoration: none; color: #bbb; }
+nav ul li a:hover{color:#0c4da2}
+
+/* definir as propriedades da imagem principal */
+#banner{width: 100;}
+#banner img{width: 100%; margin-bottom: 0;}
+
+/* definir as propriedades dos pop'ups */
+.modalDialog {
+    position: fixed;
+    font-family: 'Verdana';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(9, 21, 181, 0.8);
+    z-index: 9999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    display: none;
+}
+
+
+.modalDialog:target {
+display: block;
+opacity: 1;
+pointer-events: auto;
+
+}
+
+.modalDialog div {
+    width: 500px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.modalDialog p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.modalDialog img {
+    width: 50%;
+    position: relative;
+    margin-left: 25%;
+}
+
+.close {
+    background-color: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+
+.close:hover {
+    background-color: #0c4da2;
+}
+
+/* definir as propriedades do footer (rodapé)*/
+footer{
+    width: 100%;
+    height: 18%;
+    background-color: #0c4da2;
+    color: #fff;
+    position: relative;
+    float: left;
+    font-family: 'verdana';
+}
+
+footer .footer-text{
+    width: 30%;
+    margin: 1%;
+    position: relative;
+    float: left;
+}
+
+footer .footer-text a{
+    color:#fff
+}
+
+#rodape { 
+    background-color: #111;
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+.footer-baixo{
+    background-color: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer-baixo p{
+    word-spacing: 2px;
+    text-transform: capitalize;
+  }
+  .footer-baixo span{
+    text-transform: uppercase;
+    opacity: .4;
+  }
+
+/* definir top vendas */
+
+#vendas-code {width: 75%; position: relative; float: left;}
+#vendas-code .config-vendas {width: 81rem; border: 1px solid #0c4da2; margin-left: 1.5%; padding: 1%; float: left; margin-top: 30px; background-color: #fff; }
+#vendas-code .config-vendas img {width: 60%; margin-left: 20%; margin-bottom: 20px; float: none;}
+#vendas-code .config-vendas p {width: 90%; margin-left: 5%; font-size: 1.2em; margin-bottom: 20px; text-align: left;}
+#vendas-code .config-vendas p a{color: #111;}
+
+
+/* definir a cor de fundo das paginas  */
+.color-page {background-color: #fff;}
+
+/* definit as propiedades das imagens de titulo */
+.img-titulo {width: 20%; height: auto; margin-bottom: 10px; position: relative; float: left; margin-right: 5%;}
+.img-titulo img{width: 90%; margin-left: 10%; margin-top: 50px;}
+
+/* definir as propriedades da página quem somos */
+#integrantes-code {width: 75%; position: relative; float: left;}
+#integrantes-code .config-integrantes {width: 30%; border: 1px solid #0c4da2; margin-left: 1.5%; padding: 1%; float: right; margin-top: 30px; background-color: #fff; }
+#integrantes-code .config-integrantes img {width: 70%; margin-left: 10%; margin-bottom: 10px;}
+#integrantes-code .config-integrantes p {width: 90%; margin-left: 5%; font-size: 1.2em; margin-bottom: 20px; text-align: center;}
+#integrantes-code .config-integrantes p a{color: #111;}
+
+
+/* definir as propriedades da página Contatos */
+
+form {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.formulario{
+    width: 400px;
+    padding: 30px;
+    border:1px solid #ccc;
+}
+.formulario p{
+    width: 100%;
+    font-size: 1.5em;
+}
+.field{
+    width: 100%;
+    margin: 15px 0;
+}
+.radiobox label{
+    width: auto;
+    display: inline-block;
+}
+
+input[type=text],
+input[type=email],
+textarea{
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+textarea{
+    line-height: 20px;
+    padding: 10px;
+    height: 90px;
+    resize: none;
+}
+input[type=submit]{
+    display: block;
+    background-color: #ccc;
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+button{
+  border-radius: 15%;
+  
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    
+}
+h2 {
+    margin-top: 6%;
+}
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+  
+.container {
+    padding: 2px 16px;
+}
+
+.card2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    
+}
